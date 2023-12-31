@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>My Dearest K.</strong>
+              <p>
+                As the clock ticks its final moments of the year, I find myself
+                reflecting on the beautiful journey we've shared together. With
+                each passing day, our love has grown stronger, weaving a
+                tapestry of precious moments and shared dreams. As we stand on
+                the threshold of a new year, I am filled with gratitude for the
+                love we've cultivated and the joy you've brought into my life.
+                Your laughter has been my melody, your warmth my comfort, and
+                your presence my greatest gift. May the coming year be adorned
+                with the brilliance of our shared experiences, the tenderness of
+                our embraces, and the unwavering strength of our love. Together,
+                let's embark on new adventures, create lasting memories, and
+                continue to build a future that is as bright and promising as
+                the fireworks that will illuminate the sky. In the canvas of
+                time, you are my most treasured masterpiece. Here's to another
+                year of love, growth, and endless possibilities with you by my
+                side. Happy New Year, my love. I am eager to explore the
+                unwritten chapters of our story together.
+              </p>
+            </div>
+          </div>
+          <div class="heart"></div>
+          <div class="to-image">
+            <div class="to">To: <strong>K.</strong></div>
+            <div>
+              <img
+                src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/319751839_1262656897800310_823986630139366843_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=Lw4K6e7etsQAX9jBNTs&_nc_ht=scontent.fsgn8-3.fna&oh=00_AfDLtguEbCvEp0066cw4VgyDI4PsO97IX2BMKgGs6p8AyA&oe=6596BD27"
+                alt="k"
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+      });
+    </script>
+  </body>
+</html>
